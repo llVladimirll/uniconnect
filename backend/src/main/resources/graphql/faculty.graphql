@@ -1,0 +1,5 @@
+type Query {
+    faculties: [Faculty!]!
+    departments: [Department!]!
+    roles: [Role!]!
+}

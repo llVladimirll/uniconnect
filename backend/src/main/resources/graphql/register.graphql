@@ -1,0 +1,23 @@
+input RegisterInput {
+    name: String!
+    email: String!
+    password: String!
+}
+
+input CompleteProfileInput {
+    userId: ID!
+    username: String!
+    facultyId: ID!
+    departmentId: ID!
+    roleId: ID!
+}
+
+type AuthPayload {
+    token: String!
+    user: User!
+}
+
+type Mutation {
+    registerUser(input: RegisterInput!): User!
+    completeProfile(input: CompleteProfileInput!): AuthPayload!
+}

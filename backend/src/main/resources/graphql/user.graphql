@@ -1,0 +1,24 @@
+type User {
+    id: ID!
+    name: String!
+    email: String!
+    username: String
+    faculty: Faculty
+    department: Department
+    role: Role
+}
+
+type Faculty {
+    id: ID!
+    name: String!
+}
+
+type Department {
+    id: ID!
+    name: String!
+}
+
+type Role {
+    id: ID!
+    name: String!
+}
